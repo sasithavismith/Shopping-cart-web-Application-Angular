@@ -6,7 +6,7 @@ import { Product } from '../models/product';
   providedIn: 'root'
 })
 export class ProductService {
-products:Product[]=[
+productList:Product[]=[
 new Product(1,'Product 1', 'This is the product 1 description. The product is really kool!', 100),
 new Product(2,'Product 2', 'This is the product 2 description. The product is really kool!', 150),
 new Product(3,'Product 3', 'This is the product 3 description. The product is really kool!', 50),
@@ -19,6 +19,6 @@ new Product(7,'Product 7', 'This is the product 7 description. The product is re
 
   constructor() { }
   getProduct(): Product[]{
-    return this.products
+    return this.productList
   }
 }
