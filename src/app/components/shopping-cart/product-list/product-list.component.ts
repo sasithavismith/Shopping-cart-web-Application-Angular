@@ -1,6 +1,7 @@
 import { Component, OnInit , Input} from '@angular/core';
 import { ProductService } from 'src/app/services/product.service';
 import { Product } from 'src/app/models/product';
+import { WishlistService } from 'src/app/services/wishlist.service';
 
 
 @Component({
@@ -9,14 +10,28 @@ import { Product } from 'src/app/models/product';
   styleUrls: ['./product-list.component.css']
 })
 export class ProductListComponent implements OnInit {
-@Input() productItem: Product
+
   productList: Product[] =[]
-  constructor(private productService: ProductService) { }
+  wishlist: number[]=[]
+  constructor(
+    private productService: ProductService,
+    private wishlistService: WishlistService) { }
 
   ngOnInit(): void {
-this.productService.getProducts().subscribe((products)=>{
-  this.productList =products;
-})
-  }
+this.loadProducts();
+this.loadwishlist();
 
+  }
+loadProducts(){
+  this.productService.getProducts().subscribe((products)=>{
+    this.productList =products;
+   
+  })
+}
+loadwishlist(){
+  this.wishlistService.getWishlist().subscribe(productIds =>{
+    console.log(productIds)
+    this.wishlist =productIds
+  })
+}
 }

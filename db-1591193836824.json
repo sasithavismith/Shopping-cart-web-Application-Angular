@@ -36,14 +36,6 @@
       "price": 209
     }
   ],
-  "wishlist": [
-    {
-      "id": 1
-    },
-    {
-      "id": 3
-    }
-  ],
   "cart": [
     {
       "product": {
@@ -514,36 +506,6 @@
         "price": 299
       },
       "id": 47
-    },
-    {
-      "product": {
-        "id": 1,
-        "name": "Rubik's cube",
-        "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
-        "imageUrl": "https://dpcricket.co.uk/wp2016/wp-content/uploads/2020/01/HybridShieldPadsHeader.jpg",
-        "price": 299
-      },
-      "id": 48
-    },
-    {
-      "product": {
-        "id": 1,
-        "name": "Rubik's cube",
-        "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
-        "imageUrl": "https://dpcricket.co.uk/wp2016/wp-content/uploads/2020/01/HybridShieldPadsHeader.jpg",
-        "price": 299
-      },
-      "id": 49
-    },
-    {
-      "product": {
-        "id": 3,
-        "name": "Rubik's cube",
-        "description": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.",
-        "imageUrl": "https://www.easybuy.lk/wp-content/uploads/2016/11/spartan-english-willow-leather-bat-3.jpg",
-        "price": 250
-      },
-      "id": 50
     }
   ],
   "posts": [
