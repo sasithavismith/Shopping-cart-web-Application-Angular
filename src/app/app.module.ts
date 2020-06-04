@@ -13,6 +13,9 @@ import { CartComponent } from './components/shopping-cart/cart/cart.component';
 import { CartItemComponent } from './components/shopping-cart/cart/cart-item/cart-item.component';
 import { ProductItemComponent } from './components/shopping-cart/product-list/product-item/product-item.component';
 import { from } from 'rxjs';
+import { RegisterComponent } from './components/register/register.component';
+import { LogingComponent } from './components/loging/loging.component';
+import { PageNotFoundComponent } from './components/shared/page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +28,10 @@ import { from } from 'rxjs';
     ProductListComponent,
     CartComponent,
     CartItemComponent,
-    ProductItemComponent
+    ProductItemComponent,
+    RegisterComponent,
+    LogingComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
